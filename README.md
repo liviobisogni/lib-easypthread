@@ -17,7 +17,7 @@ To compile the library the first time:
 2. Launch a terminal window and navigate to `myptask-main/`.
 3. Type:
 
-    ```
+    ```bash
     $ mkdir build
     $ cd build
     $ cmake ..
@@ -31,7 +31,8 @@ A project that uses it is the [Tanks Simulator](https://github.com/vbisog/tanksi
 
 ![](img/rt.png)
 
-* aaa ```c
+
+```c
 void time_copy(struct timespec *td, struct timespec ts)
 ```
 * bbb
