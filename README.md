@@ -32,17 +32,21 @@ A project that uses it is the [Tanks Simulator](https://github.com/vbisog/tanksi
 ![](img/rt.png)
 
 
-```c
-void time_copy(struct timespec *td, struct timespec ts)
-```
-* bbb
-* ccc
-
-
-```c
-void time_copy(struct timespec *td, struct timespec ts)
-```
-Copies a source time variable ts to a destination time variable pointed by td.
+* __time_copy__ 
+	```c
+	void time_copy(struct timespec *td, struct timespec ts)
+	```
+	Copies a source time variable ts to a destination time variable pointed by td.
 	* Parameters
 		* `td`: A pointer to a struct timespec variable representing the destination time.
 		* `ts`: A struct timespec variable representing the source time.
+
+
+* `time_add_ms`
+	```c
+	void time_add_ms(struct timespec *t, int ms)
+	```
+	Add a value ms (expressed in milliseconds) to the time variable pointed by t.
+	* Parameters
+		* `t`: A pointer to a struct timespec variable representing the time to be incremented.
+		* `ms`: An integer representing the value to be added to the time variable in milliseconds.
