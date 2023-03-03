@@ -17,7 +17,7 @@ To compile the library the first time:
 2. Launch a terminal window and navigate to `myptask-main/`.
 3. Type:
 
-    ```shell
+    ```console
     mkdir build
     $ cd build
     $ cmake ..
