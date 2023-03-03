@@ -39,11 +39,10 @@ void time_copy(struct timespec *td, struct timespec ts)
 * ccc
 
 
-* ```c
+```c
 void time_copy(struct timespec *td, struct timespec ts)
 ```
 Copies a source time variable ts to a destination time variable pointed by td.
-
 	* Parameters
 		* `td`: A pointer to a struct timespec variable representing the destination time.
 		* `ts`: A struct timespec variable representing the source time.
