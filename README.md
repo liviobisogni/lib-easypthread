@@ -31,7 +31,6 @@ A project that uses it is the [Tanks Simulator](https://github.com/vbisog/tanksi
 
 ![](img/rt.png)
 
-
 * __time_copy__ 
 	```c
 	void time_copy(struct timespec *td, struct timespec ts)
@@ -42,11 +41,51 @@ A project that uses it is the [Tanks Simulator](https://github.com/vbisog/tanksi
 		* `ts`: A struct timespec variable representing the source time.
 
 
-* `time_add_ms`
+* __time_add_ms__
 	```c
 	void time_add_ms(struct timespec *t, int ms)
 	```
-	Add a value ms (expressed in milliseconds) to the time variable pointed by t.
+	Adds a value ms (expressed in milliseconds) to the time variable pointed by t.
 	* Parameters
 		* `t`: A pointer to a struct timespec variable representing the time to be incremented.
 		* `ms`: An integer representing the value to be added to the time variable in milliseconds.
+
+		
+* __time_cmp__
+	```c
+	int time_cmp(struct timespec t1, struct timespec t2)
+	```
+	Compares two time variables t1 and t2 and returns the result of the comparison.
+	* Parameters
+		* t1: A struct timespec variable representing the first time.
+		* t2: A struct timespec variable representing the second time.
+	* Returns
+		* An integer representing the result of the comparison:
+			* 0 if t1 = t2
+			* 1 if t1 > t2
+			* -1 if t1 < t2
+
+
+* __timespec2ms__
+	```c
+	double timespec2ms(struct timespec t)
+	```
+	Converts a timespec structure variable t to milliseconds [ms].
+	* Parameters
+		* `t`: A struct timespec variable representing the time to convert.
+	* Returns
+		* A double value representing the time in milliseconds.
+
+
+* __get_time_diff_in_ms__
+	```c
+	double get_time_diff_in_ms(struct timespec *t1, struct timespec *t2)
+	```
+	Computes the difference between two timespec structure variables t1 and t2, both expressed in milliseconds [ms].
+	* Parameters
+		* `t1`: A pointer to a struct timespec variable representing the first time.
+		* `t2`: A pointer to a struct timespec variable representing the second time.
+	* Returns
+		* A double value representing the time difference in milliseconds.
+
+
