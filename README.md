@@ -17,11 +17,11 @@ To compile the library the first time:
 2. Launch a terminal window and navigate to `myptask-main/`.
 3. Type:
 
-    ```knitr
+    ```bash
     mkdir build
-    $ cd build
-    $ cmake ..
-    $ make
+    cd build
+    cmake ..
+    make
     ```
 
 ## How to use
