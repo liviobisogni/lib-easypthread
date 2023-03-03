@@ -31,7 +31,7 @@ A project that uses it is the [Tanks Simulator](https://github.com/vbisog/tanksi
 
 ![](img/rt.png)
 
-*```c
+```c
 void time_copy(struct timespec *td, struct timespec ts)
 ```
 * aaa
