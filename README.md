@@ -1,9 +1,6 @@
 # __MyPtask Library__
 
-### _Author_: Livio Bisogni
-###### __&copy; 2021 REAL-TIME INDUSTRY Inc.__
-___
-An educational real-time library for stress-free time & task management.
+An educational real-time C library for stress-free time & task management.
 
 ## Prerequisites
 
