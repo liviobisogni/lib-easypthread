@@ -29,7 +29,9 @@ To compile the library the first time:
 The compilation produces the library file `myptask-main/build/libmyptask.a`, which must be included in thy desired projects. Adjust the library to thy choosing.
 A project that uses it is the [Tanks Simulator](https://github.com/vbisog/tanksimulator). In that repository, there is a [pdf](https://github.com/vbisog/tanksimulator/blob/main/project-report.pdf), which briefly describes the project. Indeed, it describes some of the main aspects of this library, applied to a concrete case. Italian only, though (sorry folks).
 
-![](img/rt.png)
+<p align="center" width="100%">
+    <img width="66%" src="img/rt.png"> 
+</p>
 
 ## Library Functions
 
