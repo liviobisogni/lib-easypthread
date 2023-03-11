@@ -180,17 +180,17 @@ Total elapsed time:		3306,919036 s
 Utilization factor:		5,17%
 
 Deadline misses:
-		Task 1	(Tank[1]):		0
-		Task 2	(Tank[2]):		0
-		Task 3	(Tank[3]):		0
-		Task 4	(Tank[4]):		0
-		Task 5	(Tank[5]):		0
-		Task 6	(Sensor[1]):		0
-		Task 7	(Sensor[2]):		1
-		Task 8	(Sensor[3]):		0
-		Task 9	(Sensor[4]):		0
-		Task 10	(Sensor[5]):		0
-		Task 11	(User):			1
-		Task 12	(Graphics):		2
+		Task 1	(Tank[1]):	0
+		Task 2	(Tank[2]):	0
+		Task 3	(Tank[3]):	0
+		Task 4	(Tank[4]):	0
+		Task 5	(Tank[5]):	0
+		Task 6	(Sensor[1]):	0
+		Task 7	(Sensor[2]):	1
+		Task 8	(Sensor[3]):	0
+		Task 9	(Sensor[4]):	0
+		Task 10	(Sensor[5]):	0
+		Task 11	(User):		1
+		Task 12	(Graphics):	2
 
 ```
