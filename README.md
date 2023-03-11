@@ -1,39 +1,68 @@
-# __MyPtask Library__
+# EasyPThread
 
-An educational real-time C library for stress-free time & task management.
+An educational real-time C library for easy time & task management using [pthreads](https://en.wikipedia.org/wiki/Pthreads).
 
-## Prerequisites
+<p align="center">
+	<a href="#prerequisite">Prerequisite</a>
+	<span> • </span>
+	<a href="#getting-started">Getting Started</a>
+	<span> • </span>
+	<a href="#library-functions">Library Functions</a>
+	<span> • </span>
+	<a href="#example">Example</a>
+</p>
+
+
+## <a id="prerequisite"></a>Prerequisite
 
 * [CMake 3.1+](https://cmake.org) - A cross-platform, open-source build system.
 
-## How to compile
 
-To compile the library the first time:
+## <a id="getting-started"></a>Getting Started
 
-1. Move the `myptask-main` folder (from now on referred to as `myptask-main/`) where thou prefer.
-2. Launch a terminal window and navigate to `myptask-main/`.
-3. Type:
+To get started with EasyPThread, follow these simple steps:
 
-    ```bash
-    mkdir build
-    cd build
-    cmake ..
-    make
-    ```
+1. Clone the repository:
 
-## How to use
+	``` bash
+	git clone https://github.com/vbisog/lib-easypthread
+	```
 
-The compilation produces the library file `myptask-main/build/libmyptask.a`, which must be included in thy desired projects. Adjust the library to thy choosing.
+2. Navigate to the repository directory:
+	```bash
+	cd lib-easypthread
+	```
 
-A project that uses it is the [Tanks Simulator](https://github.com/vbisog/tanksimulator). In that repository, there is a [pdf](https://github.com/vbisog/tanksimulator/blob/main/project-report.pdf), which briefly describes the project. Indeed, it describes some of the main aspects of this library, applied to a concrete case. Italian only, though (sorry folks).
+3. Run the installation script / Compile the library by running the installation script in the root directory of the repository:
+	```bash
+	./build_lib.sh
+	```
+	This will generate the library file `libeasypthread.a` in the build directory.
+
+4. Include the header files `easy_pthread_time.h` and `easy_pthread_task.h` in your project source code:
+	```c
+	#include "easy_pthread_time.h"
+	#include "easy_pthread_task.h"
+	```
+
+5. Link your project with the libeasypthread.a library file by passing the following flag to the compiler:
+	```bash
+	-L/path/to/lib-easypthread/build -libeasypthread
+	```
+where /path/to/lib-easypthread/build is the path to the build directory of the EasyPThread repository.
+
+6. Use the EasyPThread library functions in your code. See the [Library Functions](#library-functions) section for more information on available functions.
+
+The [Tanks Simulator](https://github.com/vbisog/tanksimulator) project provides an example of how EasyPThread can be used in a concrete case.
 
 <p align="center" width="100%">
     <img width="61.8%" src="img/rt.png"> 
 </p>
 
-## Library Functions
 
-### Time-Related Functions
+## <a id="library-functions"></a>Library Functions
+
+### Time-Related Functions (`easy_pthread_time.h`)
 
 * __time_copy__ 
 	```c
@@ -93,4 +122,87 @@ A project that uses it is the [Tanks Simulator](https://github.com/vbisog/tanksi
 		* A double value representing the time difference in milliseconds.
 
 
-### Task-Related Functions
+### Task-Related Functions (`easy_pthread_task.h`)
+
+
+## <a id="example"></a>An example
+
+A use case (taken from [Tanks Simulator](https://github.com/vbisog/tanksimulator)):
+
+```console
+foo@bar:~$
+test console
+foo
+```
+
+```shell-session
+foo@bar:~$
+test shell-session
+foo
+```
+
+```console
+foo@bar:~$
+
+# [...] other task WCET estimations [...]
+
+******************************************
+************ WCET ESTIMATION: ************
+************  Graphics Task   ************
+******************************************
+Loop length: 82671 cycles
+Deadline misses: 2
+NOTE: Times are expressed in milliseconds.
+Response time analysis:
+	Average (AORT):			1,820858
+	Maximum (WORT):			34,920520
+	Minimum (BORT):			1,273668
+	Total:						150532,141663
+	Standard deviation:		0,464532
+	Utilization factor:		4,552145%
+20 worst response times
+	1)	rt[82616]:	34,920520
+	2)	rt[79819]:	24,135712
+	3)	rt[57319]:	22,416414
+	4)	rt[25819]:	12,704050
+	5)	rt[63808]:	9,537036
+	6)	rt[80760]:	9,517341
+	7)	rt[82587]:	9,319828
+	8)	rt[58991]:	8,379423
+	9)	rt[70820]:	8,252726
+	10)	rt[20291]:	8,187747
+	11)	rt[63319]:	8,085694
+	12)	rt[42803]:	8,038885
+	13)	rt[46521]:	7.970052
+	14)	rt[69319]:	7,946617
+	15)	rt[68261]:	7,890043
+	16)	rt[54126]:	7,748464
+	17)	rt[50348]:	7.742843
+	18)	rt[50717]:	7,734707
+	19)	rt[78320]:	7,603784
+	20)	rt[61391]:	7,584347
+
+
+
+******************************************
+*****         TANK SIMULATOR:        *****
+******************************************
+Total elapsed time:		3306,919036 s
+
+Utilization factor:		5,17%
+
+Deadline misses:
+		Task 1		(Tank[1]):		0
+		Task 2		(Tank[2]):		0
+		Task 3		(Tank[3]):		0
+		Task 4		(Tank[4]):		0
+		Task 5		(Tank[5]):		0
+		Task 6		(Sensor[1]):		0
+		Task 7		(Sensor[2]):		1
+		Task 8		(Sensor[3]):		0
+		Task 9		(Sensor[4]):		0
+		Task 10	(Sensor[5]):		0
+		Task 11	(User):			1
+		Task 12	(Graphics):		2
+
+```

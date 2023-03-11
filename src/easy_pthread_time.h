@@ -1,7 +1,6 @@
 //*****************************************************************************
-//******************** MYPTIME.H - Header file of myptime.c *******************
-//********************        Author: Livio Bisogni         *******************
-//********************    © 2021 REAL-TIME INDUSTRY Inc.    *******************
+//********** EASY_PTHREAD_TIME.H - Header file of easy_pthread_time.c *********
+//**********                  Author: Livio Bisogni                   *********
 //*****************************************************************************
 
 /*‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
@@ -11,8 +10,8 @@
 _____________________________________________________________________________*/
 
 
-#ifndef MYPTIME_H
-#define MYPTIME_H
+#ifndef EASY_PTHREAD_TIME_H
+#define EASY_PTHREAD_TIME_H
 
 #include <time.h>
 
@@ -34,4 +33,4 @@ double get_time_diff_in_ms(struct timespec *t1, struct timespec *t2);
 //-----------------------------------------------------------------------------
 
 
-#endif  // MYPTIME_H
+#endif  // EASY_PTHREAD_TIME_H

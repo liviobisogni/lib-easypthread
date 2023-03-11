@@ -1,7 +1,6 @@
 //*****************************************************************************
-//******************** MYPTASK.H - Header file of myptask.c *******************
-//********************        Author: Livio Bisogni         *******************
-//********************    © 2021 REAL-TIME INDUSTRY Inc.    *******************
+//********** EASY_PTHREAD_TASK.H - Header file of easy_pthread_task.c *********
+//**********                  Author: Livio Bisogni                   *********
 //*****************************************************************************
 
 /*‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
@@ -11,11 +10,11 @@
 _____________________________________________________________________________*/
 
 
-#ifndef MYPTASK_H
-#define MYPTASK_H
+#ifndef EASY_PTHREAD_TASK_H
+#define EASY_PTHREAD_TASK_H
 
 #include <pthread.h>
-#include "myptime.h"
+#include "easy_pthread_time.h"
 
 
 /*‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
@@ -53,7 +52,7 @@ struct task_par
     double         util_inst;  // instantaneous utilization factor
     double         util_inst_max;  // maximumm instantaneous utilization factor
     double         util_avg;       // average utilization factor
-    double *       rt_values;      // array storing all the response times  [ms]
+    double        *rt_values;      // array storing all the response times  [ms]
     unsigned long *rt_indexes;     // array storing the indexes of the rt
     unsigned long  ex_tot;         /* (current) total number of task execution;
                                       value in {0, ..., GOOGOL - 1}.
@@ -169,4 +168,4 @@ double task_compute_rt_avg_from_scratch(int j);
 //-----------------------------------------------------------------------------
 
 
-#endif  // MYPTASK_H
+#endif  // EASY_PTHREAD_TASK_H

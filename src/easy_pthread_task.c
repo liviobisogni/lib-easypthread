@@ -1,7 +1,6 @@
 //*****************************************************************************
-//**************** MYPTASK.C - For stress-free task management ****************
-//****************            Author: Livio Bisogni            ****************
-//****************        © 2021 REAL-TIME INDUSTRY Inc.       ****************
+//*************** EASY_PTHREAD_TASK.C - For easy task management **************
+//***************             Author: Livio Bisogni              **************
 //*****************************************************************************
 
 /*‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
@@ -11,7 +10,7 @@
 _____________________________________________________________________________*/
 
 
-#include "myptask.h"
+#include "easy_pthread_task.h"
 #include <assert.h>
 #include <float.h>
 #include <math.h>
@@ -586,7 +585,7 @@ double task_compute_rt_max_from_scratch(int j)
 {
     unsigned long m;
     unsigned long ex_tot;
-    double *      rt_values;
+    double       *rt_values;
     double        rt_max;
 
     ex_tot    = tp[j].ex_tot;
@@ -632,7 +631,7 @@ double task_compute_rt_min_from_scratch(int j)
 {
     unsigned long m;
     unsigned long ex_tot;
-    double *      rt_values;
+    double       *rt_values;
     double        rt_min;
 
     ex_tot    = tp[j].ex_tot;
@@ -654,7 +653,7 @@ _____________________________________________________________________________*/
 
 double task_compute_std_dev(int j)
 {
-    double *      rt_values;
+    double       *rt_values;
     unsigned long m;
     double        rt_avg;
     unsigned long l;            // for-loop index
@@ -782,7 +781,7 @@ double task_compute_rt_avg_from_scratch(int j)
 {
     unsigned long m;
     unsigned long ex_tot;
-    double *      rt_values;
+    double       *rt_values;
     double        rt_tot;
     double        rt_avg;  // average response time
 
