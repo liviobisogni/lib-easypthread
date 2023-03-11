@@ -145,7 +145,7 @@ Response time analysis:
 	Average (AORT):		1,820858
 	Maximum (WORT):		34,920520
 	Minimum (BORT):		1,273668
-	Total:				150532,141663
+	Total:			150532,141663
 	Standard deviation:	0,464532
 	Utilization factor:	4,552145%
 20 worst response times
@@ -173,7 +173,7 @@ Response time analysis:
 
 
 ******************************************
-*****         TANK SIMULATOR:        *****
+*****        TANKS SIMULATOR:        *****
 ******************************************
 Total elapsed time:		3306,919036 s
 
@@ -185,11 +185,11 @@ Deadline misses:
 		Task 3	(Tank[3]):		0
 		Task 4	(Tank[4]):		0
 		Task 5	(Tank[5]):		0
-		Task 6	(Sensor[1]):	0
-		Task 7	(Sensor[2]):	1
-		Task 8	(Sensor[3]):	0
-		Task 9	(Sensor[4]):	0
-		Task 10	(Sensor[5]):	0
+		Task 6	(Sensor[1]):		0
+		Task 7	(Sensor[2]):		1
+		Task 8	(Sensor[3]):		0
+		Task 9	(Sensor[4]):		0
+		Task 10	(Sensor[5]):		0
 		Task 11	(User):			1
 		Task 12	(Graphics):		2
 
