@@ -138,8 +138,8 @@ foo@bar:~$
 ************ WCET ESTIMATION: ************
 ************  Graphics Task   ************
 ******************************************
-Loop length: 82671 cycles
-Deadline misses: 2
+Loop length:			82671 cycles
+Deadline misses:		2
 NOTE: Times are expressed in milliseconds.
 Response time analysis:
 	Average (AORT):		1,820858
@@ -175,9 +175,9 @@ Response time analysis:
 ******************************************
 *****        TANKS SIMULATOR:        *****
 ******************************************
-Total elapsed time:		3306,919036 s
+Total elapsed time:			3306,919036 s
 
-Utilization factor:		5,17%
+Utilization factor:			5,17%
 
 Deadline misses:
 		Task 1	(Tank[1]):	0
