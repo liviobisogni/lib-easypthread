@@ -68,7 +68,7 @@ The [Tanks Simulator](https://github.com/vbisog/tanksimulator) project provides 
 	```c
 	void time_copy(struct timespec *td, struct timespec ts)
 	```
-	Copies a source time variable ts to a destination time variable pointed by td.
+	Copies a source time variable `ts` to a destination time variable pointed by `td`.
 	* Parameters
 		* `td` A pointer to a struct timespec variable representing the destination time.
 		* `ts` A struct timespec variable representing the source time.
@@ -78,7 +78,7 @@ The [Tanks Simulator](https://github.com/vbisog/tanksimulator) project provides 
 	```c
 	void time_add_ms(struct timespec *t, int ms)
 	```
-	Adds a value ms (expressed in milliseconds) to the time variable pointed by t.
+	Adds a value ms (expressed in milliseconds) to the time variable pointed by `t`.
 	* Parameters
 		* `t` A pointer to a struct timespec variable representing the time to be incremented.
 		* `ms` An integer representing the value to be added to the time variable in milliseconds.
@@ -88,7 +88,7 @@ The [Tanks Simulator](https://github.com/vbisog/tanksimulator) project provides 
 	```c
 	int time_cmp(struct timespec t1, struct timespec t2)
 	```
-	Compares two time variables t1 and t2 and returns the result of the comparison.
+	Compares two time variables `t1` and `t2` and returns the result of the comparison.
 	* Parameters
 		* `t1` A struct timespec variable representing the first time.
 		* `t2` A struct timespec variable representing the second time.
@@ -103,7 +103,7 @@ The [Tanks Simulator](https://github.com/vbisog/tanksimulator) project provides 
 	```c
 	double timespec2ms(struct timespec t)
 	```
-	Converts a timespec structure variable t to milliseconds [ms].
+	Converts a timespec structure variable `t` to milliseconds.
 	* Parameters
 		* `t` A struct timespec variable representing the time to convert.
 	* Returns
@@ -114,7 +114,7 @@ The [Tanks Simulator](https://github.com/vbisog/tanksimulator) project provides 
 	```c
 	double get_time_diff_in_ms(struct timespec *t1, struct timespec *t2)
 	```
-	Computes the difference between two timespec structure variables t1 and t2, both expressed in milliseconds [ms].
+	Computes the difference between two timespec structure variables `t1` and `t2`, both expressed in milliseconds.
 	* Parameters
 		* `t1` A pointer to a struct timespec variable representing the first time.
 		* `t2` A pointer to a struct timespec variable representing the second time.
@@ -131,18 +131,6 @@ A use case (taken from [Tanks Simulator](https://github.com/vbisog/tanksimulator
 
 ```console
 foo@bar:~$
-test console
-foo
-```
-
-```shell-session
-foo@bar:~$
-test shell-session
-foo
-```
-
-```console
-foo@bar:~$
 
 # [...] other task WCET estimations [...]
 
@@ -154,12 +142,12 @@ Loop length: 82671 cycles
 Deadline misses: 2
 NOTE: Times are expressed in milliseconds.
 Response time analysis:
-	Average (AORT):			1,820858
-	Maximum (WORT):			34,920520
-	Minimum (BORT):			1,273668
-	Total:						150532,141663
-	Standard deviation:		0,464532
-	Utilization factor:		4,552145%
+	Average (AORT):		1,820858
+	Maximum (WORT):		34,920520
+	Minimum (BORT):		1,273668
+	Total:				150532,141663
+	Standard deviation:	0,464532
+	Utilization factor:	4,552145%
 20 worst response times
 	1)	rt[82616]:	34,920520
 	2)	rt[79819]:	24,135712
@@ -192,16 +180,16 @@ Total elapsed time:		3306,919036 s
 Utilization factor:		5,17%
 
 Deadline misses:
-		Task 1		(Tank[1]):		0
-		Task 2		(Tank[2]):		0
-		Task 3		(Tank[3]):		0
-		Task 4		(Tank[4]):		0
-		Task 5		(Tank[5]):		0
-		Task 6		(Sensor[1]):		0
-		Task 7		(Sensor[2]):		1
-		Task 8		(Sensor[3]):		0
-		Task 9		(Sensor[4]):		0
-		Task 10	(Sensor[5]):		0
+		Task 1	(Tank[1]):		0
+		Task 2	(Tank[2]):		0
+		Task 3	(Tank[3]):		0
+		Task 4	(Tank[4]):		0
+		Task 5	(Tank[5]):		0
+		Task 6	(Sensor[1]):	0
+		Task 7	(Sensor[2]):	1
+		Task 8	(Sensor[3]):	0
+		Task 9	(Sensor[4]):	0
+		Task 10	(Sensor[5]):	0
 		Task 11	(User):			1
 		Task 12	(Graphics):		2
 
