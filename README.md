@@ -22,10 +22,10 @@ An educational real-time C library for easy time & task management using [pthrea
 
 To get started with EasyPThread, follow these simple steps:
 
-1. Clone the repository:
+1. Clone the repository (e.g., with HTTPS URLs):
 
 	``` bash
-	git clone https://github.com/vbisog/lib-easypthread
+	git clone https://github.com/liviobisogni/lib-easypthread
 	```
 
 2. Navigate to the repository directory:
@@ -33,7 +33,7 @@ To get started with EasyPThread, follow these simple steps:
 	cd lib-easypthread
 	```
 
-3. Run the installation script / Compile the library by running the installation script in the root directory of the repository:
+3. Build the EasyPThread library by running the installation script in the root directory of the repository:
 	```bash
 	./build_lib.sh
 	```
@@ -45,7 +45,7 @@ To get started with EasyPThread, follow these simple steps:
 	#include "easy_pthread_task.h"
 	```
 
-5. Link your project with the libeasypthread.a library file by passing the following flag to the compiler:
+5. Link your project with the `libeasypthread.a` library file by passing the following flag to the compiler:
 	```bash
 	-L/path/to/lib-easypthread/build -libeasypthread
 	```
@@ -53,7 +53,7 @@ where /path/to/lib-easypthread/build is the path to the build directory of the E
 
 6. Use the EasyPThread library functions in your code. See the [Library Functions](#library-functions) section for more information on available functions.
 
-The [Tanks Simulator](https://github.com/vbisog/tanksimulator) project provides an example of how EasyPThread can be used in a concrete case.
+The [Tanks Simulator](https://github.com/liviobisogni/tanksimulator) project provides an example of how EasyPThread can be used in a concrete case.
 
 <p align="center" width="100%">
     <img width="61.8%" src="img/rt.png"> 
@@ -124,10 +124,12 @@ The [Tanks Simulator](https://github.com/vbisog/tanksimulator) project provides 
 
 ### Task-Related Functions (`easy_pthread_task.h`)
 
+* ...
+
 
 ## <a id="example"></a>An example
 
-A use case (taken from [Tanks Simulator](https://github.com/vbisog/tanksimulator)):
+A use case (taken from [Tanks Simulator](https://github.com/liviobisogni/tanksimulator)):
 
 ```console
 foo@bar:~$
