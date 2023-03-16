@@ -1,6 +1,6 @@
 # EasyPThread
 
-An educational real-time C library for easy time & task management using [pthreads](https://en.wikipedia.org/wiki/Pthreads).
+Real-time C library for thread-based time and task management using [pthreads](https://en.wikipedia.org/wiki/Pthreads), with built-in statistical analysis.
 
 <p align="center">
 	<a href="#prerequisite">Prerequisite</a>
